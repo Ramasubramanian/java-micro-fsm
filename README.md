@@ -11,11 +11,11 @@ Build steps:
 find . -name java-micro-fsm.jar
 ```
 
-You can always copy the files and use instead of builing a jar.
+You can always copy the files and use instead of building a jar.
 
-Example:
+**Example:**
 
-For details example please refer to `FSMExample.java` in the tests.
+For a detailed example please refer to `FSMExample.java` in the tests.
 
 1. First you have to define the possible events that might change the state of the FSM
 ```java
@@ -79,3 +79,12 @@ For details example please refer to `FSMExample.java` in the tests.
                          .forEach(System.out::println);
  ```
  Invoke `getTransitions()` on the fsm instance to get the history of state transitions for debugging or analysis
+ 
+ Above code would print something like:
+ 
+ ```
+ Transition{fromState=null, toState=State{name='NEW'}}
+ Transition{fromState=State{name='NEW'}, toState=State{name='IN_PROGRESS'}}
+ Transition{fromState=State{name='IN_PROGRESS'}, toState=State{name='FAILURE'}}
+ Transition{fromState=State{name='FAILURE'}, toState=State{name='POST_FAILURE'}}
+ ```
