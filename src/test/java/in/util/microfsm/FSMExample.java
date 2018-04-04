@@ -4,8 +4,12 @@ import org.hamcrest.collection.IsIterableContainingInOrder;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.Arrays;
-
+/**
+ * This example about a simple asynchronous job/task processing queue. The tasks are saved in some queue which is picked up by a worker and processed.
+ * Initial state of every task is new and it transitions to In Progress once it is picked up, then success or failure depending on the execution.
+ * After success or failure there is a post processing step based on the execution result which will terminate the life cycle of a job.
+ * Modelling it as an FSM helps to enable crash recovery i.e. restarting a task from any of the intermediate states. Avoiding transitions to invalid states etc.
+ */
 public class FSMExample {
 
     private static boolean FAIL_TASK = false;
