@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/java-micro-fsm.iml" filepath="$PROJECT_DIR$/.idea/modules/java-micro-fsm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/java-micro-fsm_main.iml" filepath="$PROJECT_DIR$/.idea/modules/java-micro-fsm_main.iml" group="java-micro-fsm" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/java-micro-fsm_test.iml" filepath="$PROJECT_DIR$/.idea/modules/java-micro-fsm_test.iml" group="java-micro-fsm" />
+    </modules>
+  </component>
+</project>
